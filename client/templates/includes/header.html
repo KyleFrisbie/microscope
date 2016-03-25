@@ -11,13 +11,13 @@
         </div>
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav">
-                {{#if currentUser}}
                 <li class="{{activeRouterClass 'home' 'newPosts'}}">
                     <a href="{{pathFor 'newPosts'}}">Newest</a>
                 </li>
                 <li class="{{activeRouterClass 'bestPosts'}}">
                     <a href="{{pathFor 'bestPosts'}}">Best</a>
                 </li>
+                {{#if currentUser}}
                 <li>
                     <a href="{{pathFor 'postSubmit'}}">Submit Post</a>
                 </li>
